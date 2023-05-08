@@ -6,7 +6,7 @@ function Header() {
   return (
     <header>
         <div className='logo-holder'>
-          <img className='logo-img' src={logo} alt='Game Universe' width='150px' height='150px' />
+          <img className='logo-img' src={logo} alt='Game Universe' width='120px' height='120px' />
           <h2 className='logo-name'>Game Universe</h2>
         </div>
         <nav className='navigation'>
@@ -18,6 +18,7 @@ function Header() {
         </nav>
     </header>
   )
+  
 }
 
 export default Header

@@ -1,19 +1,37 @@
 import React from 'react'
+import './styles/login.css'
 
 function Login() {
   return (
-    <div>
-        <div>
-            <form>
-                <div>
-                    <label htmlFor="email"></label>
-                    <input type="email" placeholder='Enter Email'/>
+    <div className='wrapper'>
+        <div className="form-box login">
+            <h2>Login</h2>
+            <form action='#'>
+                <div className="input-box">
+                    <span className='icon'>
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required/>
+                    <label>Email</label>
                 </div>
-                <div>
-                    <label htmlFor="password"></label>
-                    <input type="password" placeholder='Enter Email'/>
+                <div className="input-box">
+                    <span className='icon'>
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required/>
+                    <label>Password</label>
                 </div>
-                <button>Login</button>
+                <div className="remember-forgot">
+                    <label>
+                        <input type="checkbox"/>Remember me</label>
+                        <a href="#">Forgot Password</a>
+                </div>
+                <button type='submit' className='btn'>Login</button>
+                <div className="login-register">
+                    <p>Don`t have an account?
+                        <a href="#" className='register-link'>Register</a>
+                    </p>
+                </div>
             </form>
         </div>
     </div>

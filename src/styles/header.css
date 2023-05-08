@@ -1,16 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background-color: teal;
+    background-color: #272838;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,15 +12,21 @@ header {
 }
 
 .logo-holder {
+    width: 300px;
     display: flex;
-    font-size: 2em;
+    align-items: center;
+    font-size: 1.5em;
     color: #fff;
     user-select: none;
 }
 
+.logo-img {
+    pointer-events: none;
+}
+
 .navigation a {
     position: relative;
-    font-size: 1.1em;
+    font-size: 1.3em;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
