@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './styles/header.css'
 import logo from './logo.png'
 
-function Header() {
+function Header({handleLoginPopupClick}) {
   return (
     <header>
         <div className='logo-holder'>
@@ -14,7 +14,7 @@ function Header() {
             <a href='#'>About</a>
             <a href='#'>Services</a>
             <a href='#'>Contact</a>
-            <button className='btnLogin-popup'>Login</button>
+            <button className='btnLogin-popup' onClick={handleLoginPopupClick}>Login</button>
         </nav>
     </header>
   )
