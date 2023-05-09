@@ -1,5 +1,5 @@
 .wrapper {
-    margin: 200px 40%;
+    margin: 100px 40%;
     position: relative;
     width: 400px;
     height: 440px;
@@ -48,6 +48,11 @@
 .wrapper.popup.register .form-box.register {
     transition: transform .3s ease;
     transform: translateX(0);
+}
+
+.wrapper .transition-block {
+    display: flex;
+    justify-content: space-around;
 }
 
 .wrapper .icon-close {

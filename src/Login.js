@@ -43,7 +43,8 @@ function Login({handleOpenPopupClick, handleClosePopupClick, isOpenPopup}) {
                 </div>
                 <button type='submit' className='btn'>Login</button>
                 <div className="login-register">
-                    <p>Don`t have an account?
+                    <p className='transition-block'>
+                        Don`t have an account?
                         <a href="#" className='register-link' onClick={handleLoginLinkClick}>Register</a>
                     </p>
                 </div>
@@ -80,7 +81,8 @@ function Login({handleOpenPopupClick, handleClosePopupClick, isOpenPopup}) {
                 </div>
                 <button type='submit' className='btn'>Register</button>
                 <div className="login-register">
-                    <p>Already have an account?
+                    <p className='transition-block'>
+                        Already have an account?
                         <a href="#" className='login-link' onClick={handleLoginLinkClick}>Login</a>
                     </p>
                 </div>
