@@ -1,10 +1,20 @@
+.wrap {
+    background-image: url('../img/backround.png');
+    background-size: cover;
+    height: 85vh;
+    background-color: rgba(39, 40, 56, .5);
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
 .wrapper {
-    margin: 100px 40%;
     position: relative;
     width: 400px;
     height: 440px;
-    background: transparent;
-    background-color: rgb(190, 182, 182);
+    background: #bfbfca;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
@@ -107,7 +117,6 @@
     color: #162938;
     font-weight: 600;
     padding: 0 35px 0 5px;
-
 }
 
 .input-box .icon {
@@ -118,8 +127,7 @@
     line-height: 57px;
 }
 
-.input-box input:focus~label,
-.input-box input:focus~:valid{
+.input-box label{
     top: -5px;
 }
 
@@ -175,4 +183,19 @@
 
 .login-register p a:hover {
     text-decoration: underline;
+}
+
+.form-box.register.remember-forgot{
+    display: flex;
+    flex-direction: column;
+}
+
+.show-password {
+    color: #162938;
+    margin-bottom: 15px;
+}
+
+.show-password label input {
+    accent-color: #162938;
+    margin-right: 3px;
 }

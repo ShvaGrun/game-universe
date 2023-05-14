@@ -9,6 +9,8 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 99;
+    height: 15vh;
+    /* margin-bottom: 20px; */
 }
 
 .logo-holder {
@@ -50,7 +52,7 @@ header {
     transform: scaleX(1);
 }
 
-.navigation .btnLogin-popup {
+header .btnLogin-popup {
     width: 130px;
     height: 50px;
     background: transparent;
@@ -61,11 +63,10 @@ header {
     font-size: 1.1em;
     color: #fff;
     font-weight: 500;
-    margin-left: 40px;
     transition: .5s;
 }
 
-.navigation .btnLogin-popup:hover {
+header .btnLogin-popup:hover {
     background: #fff;
-    color: teal;
+    color: #272838;
 }
